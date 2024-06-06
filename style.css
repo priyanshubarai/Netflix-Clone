@@ -1,0 +1,10 @@
+/* background-color: #302c2c; */
+/* div-color : #080404; */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.world{
+    background-color: #302c2c;
+}
