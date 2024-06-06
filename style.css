@@ -1,8 +1,15 @@
 /* background-color: #302c2c; */
 /* div-color : #080404; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .world{
@@ -49,12 +56,20 @@
 #signin{
     height: 5vh;
     width : 6vw;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    border-radius: 0.5rem;
 }
 
 
 #select{
     height: 5vh;
-    width : 8vw;
+    width : 6vw;
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+
 }
 
 .continent-2{
