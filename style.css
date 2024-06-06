@@ -7,4 +7,59 @@
 
 .world{
     background-color: #302c2c;
+    max-width : 100vw;   /*to avoid horizontal scroll bar */
+}
+
+.continent-1{
+    background-color: #080404;
+    max-width : 100vw;
+    height: 110vh;
+    background-image: url('assests/top-background.jpg');
+    background-position: center center;
+    
+}
+
+.header{
+    margin: 0vh 5vw;
+    height : 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlist{
+    margin: 0 6vw;
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    
+}
+
+.navlist > li{
+    padding: 0.5rem;
+}
+
+.logo{
+    filter: invert(21%) sepia(86%) saturate(7474%) hue-rotate(357deg) brightness(95%) contrast(114%);   /*to get red out of black in logo*/
+    height: 2.5rem;
+    width: 9.25rem;
+    margin-right: 40rem;
+}
+
+#signin{
+    height: 5vh;
+    width : 6vw;
+}
+
+
+#select{
+    height: 5vh;
+    width : 8vw;
+}
+
+.continent-2{
+    background-color: #080404;
+    max-width: 100vw;
+    height: 70vh;
+    margin-top: 1vh;
 }
