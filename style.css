@@ -258,5 +258,70 @@
     
 }
 
+.continent-4{
+    height: 500px;
+    max-width: 100vw;
+    background-color: #080404;
+    margin-top: 1vh;
+    padding: 10vh 0vh;
+}
+
+.continent-4 > .country{
+    background-color:#080404;
+    max-width: 100vw;
+    height: inherit;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+}
+
+.continent-4 .country > .text-box{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continent-4 .country > .graphic-box{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continent-4 .country .graphic-box > .graphic{
+    margin-right: 4vw;    
+    display: grid;
+    grid-template-areas: "main";
+}
+
+.continent-4 .country .graphic-box .graphic > img{
+    z-index: 2;
+    grid-area: main;
+}
+
+.continent-4 .country .graphic-box .graphic > video{
+    z-index: 1;
+    grid-area: main;
+    margin-top: 6vh;
+    margin-left: 8vw;
+    height: 35vh;
+}
+
+
+.continent-4 .country .text-box > .text{
+    color: white;
+}
+
+.continent-4 .country .text-box .text > span{
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.continent-4 .country .text-box .text > pre{
+    font-size: larger;
+    letter-spacing: 1px;
+    line-height: 5vh;
+}
 
 
