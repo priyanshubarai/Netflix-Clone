@@ -198,7 +198,7 @@
 .continent-3 .country {
     height: inherit;
     max-width: 100vw;
-    background-color: chocolate;
+    background-color: #080404;
     display: grid;
     grid-template-areas: "Garea Tarea";
     grid-template-columns: 1fr 1fr;
@@ -206,19 +206,57 @@
     align-items: center;    
 }
 
-.continent-3 .country > .graphic{
-    background-color: rgb(76, 19, 83);
+.continent-3 .country > .graphic-box{
+    background-color:#080404;
     height: inherit;
-    width: 50vw;
     grid-area: Garea;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.continent-3 .country > .text{
-    background-color: brown;
+.continent-3 .country > .text-box{
+    background-color :#080404;
     height: inherit;
-    width: 50vw;
     grid-area: Tarea;
-    justify-self: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
+
+.continent-3 .country .text-box > .text{
+    background-color :#080404;
+    height: auto;
+    width:auto;
+    color: white;
+    margin-left: 2vw;
+
+}
+
+.continent-3 .country .text-box .text > .head{
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.continent-3 .country .text-box .text > pre{
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+
+.continent-3 .country .graphic-box > .graphic{
+    background-color:#080404;
+    height: inherit;
+    width: auto;
+    
+}
+
+.continent-3 .country .graphic-box .graphic > img{
+    position: relative;
+    
+}
+
+
+
