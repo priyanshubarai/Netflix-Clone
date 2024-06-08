@@ -1,12 +1,12 @@
-/* background-color: #302c2c; */
-/* div-color : #080404; */
+/* background-color: #302c2c;  greyish*/
+/* div-color : #080404;  blackish*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 *{
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -104,7 +104,7 @@
     width: 25vw;
     margin-left: 4vw;
     font-size: large;
-    
+
 }
 
 
@@ -119,8 +119,70 @@
 }
 
 .continent-2{
-    background-color: #080404;
+    background-color:#080404;
     max-width: 100vw;
-    height: 70vh;
-    margin-top: 1vh;
+    height: 86.81922480620155vh;
+    position: relative;
+    top: 1vh;
+    padding:10vh 0% ;
+}
+
+
+.continent-2 > .country{
+    background-color:#080404;
+    height: inherit;
+    position: relative;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.continent-2 .country .text-container {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continent-2 .country .text-container .text span{
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 28vw;
+}
+
+.continent-2 .country .text-container .text{
+    font-size: large;
+    line-height: 5vh;
+}
+
+.continent-2 .country .graphic-container{
+    position: relative;
+    left: 10%;
+}
+
+.continent-2 .country .graphic{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "main";
+}
+.continent-2 .country .graphic img ,.continent-2 .country .graphic video {
+    grid-area: main;
+}
+
+.continent-2 .country .graphic video{
+    z-index: 1;
+    position: relative;
+    left: 12%;
+    top: -1%;
+
+}
+
+.continent-2 .country .graphic img{
+    z-index: 2;
 }
