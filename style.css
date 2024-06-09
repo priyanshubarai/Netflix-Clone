@@ -118,12 +118,12 @@
 
 }
 
-.continent-2{
+.continent-2 {
     background-color:#080404;
     max-width: 100vw;
     height: 86.81922480620155vh;
     margin-top: 1vh;
-    padding:10vh 0% ;
+    padding:10vh 0vh ;
 }
 
 
@@ -234,7 +234,7 @@
 
 }
 
-.continent-3 .country .text-box .text > .head{
+.country .text-box .text > .head{
     font-size: xx-large;
     font-weight: bolder;
     letter-spacing: 2px;
@@ -308,20 +308,60 @@
 }
 
 
-.continent-4 .country .text-box > .text{
+ .country .text-box > .text{
     color: white;
 }
 
-.continent-4 .country .text-box .text > span{
+.country .text-box .text > span{
     font-size: xx-large;
     font-weight: bolder;
     letter-spacing: 2px;
 }
 
-.continent-4 .country .text-box .text > pre{
+.country .text-box .text > pre{
     font-size: larger;
     letter-spacing: 1px;
     line-height: 5vh;
+    
 }
+
+.continent-5{
+    background-color: #080404;
+    height: 500px;
+    max-width: 100vw;
+    margin-top: 1vh;
+    padding: 10vh 0vh;
+}
+
+.continent-5 > .country{
+    height: inherit;
+    max-width: 100vw;
+    display: grid;
+    grid-template-areas: "Garea3 Tarea3";
+}
+
+.continent-5 .country > .graphic-box{
+    grid-area: Garea3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continent-5 .country  .graphic-box .graphic > img{
+    height: 60vh;
+
+}
+
+.continent-5 .country > .text-box{
+    grid-area: Tarea3;
+    width: 50vw;
+    margin-right: -20vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
 
 
