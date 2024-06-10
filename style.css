@@ -118,12 +118,14 @@
 
 }
 
-.continent-2 {
+.continent {
     background-color:#080404;
     max-width: 100vw;
     height: 86.81922480620155vh;
     margin-top: 1vh;
     padding:10vh 0vh ;
+    display: grid;
+    align-items: center;
 }
 
 
@@ -185,7 +187,7 @@
     z-index: 2;
 }
 
-.continent-3{
+/* .continent-3{
     margin-top: 1vh;
     background-color:#080404;
     height: 500px;
@@ -193,7 +195,7 @@
     display: grid;
     align-items: center;
     padding: 10vh 0vh;
-}
+} */
 
 .continent-3 .country {
     height: inherit;
@@ -201,8 +203,6 @@
     background-color: #080404;
     display: grid;
     grid-template-areas: "Garea Tarea";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     align-items: center;    
 }
 
@@ -258,13 +258,13 @@
     
 }
 
-.continent-4{
+/* .continent-4{
     height: 500px;
     max-width: 100vw;
     background-color: #080404;
     margin-top: 1vh;
     padding: 10vh 0vh;
-}
+} */
 
 .continent-4 > .country{
     background-color:#080404;
@@ -325,13 +325,13 @@
     
 }
 
-.continent-5{
+/* .continent-5{
     background-color: #080404;
     height: 500px;
     max-width: 100vw;
     margin-top: 1vh;
     padding: 10vh 0vh;
-}
+} */
 
 .continent-5 > .country{
     height: inherit;
@@ -361,7 +361,11 @@
     align-items: center;
 }
 
-
+footer{
+    background-color: #080404;
+    margin-top: 1vh;
+    height: 60vh;
+}
 
 
 
