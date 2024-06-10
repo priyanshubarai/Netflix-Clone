@@ -374,10 +374,11 @@ footer > .grid-box{
     height: inherit;
     display: grid;
     align-items:center;
+    font-size: smaller;
 }
 
 footer .grid-box .parent-list  .grid-items{
-    color: white;
+    color: aqua;
     background-color:#080404;
     height: 35vh;
     width: inherit;
@@ -396,7 +397,7 @@ footer .grid-box .parent-list .grid-items > li{
 
 footer .grid-box .parent-list > li{
     list-style-type: none;
-    color: white;
+    color: aqua;
     line-height: 6vh;
 }
 
