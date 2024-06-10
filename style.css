@@ -365,7 +365,42 @@ footer{
     background-color: #080404;
     margin-top: 1vh;
     height: 60vh;
+    padding: 5vh 10vw;
+}
+
+footer > .grid-box{
+    background-color:#080404;
+    max-width: 100vw;
+    height: inherit;
+    display: grid;
+    align-items:center;
+}
+
+footer .grid-box .parent-list  .grid-items{
+    color: white;
+    background-color:#080404;
+    height: 35vh;
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    list-style-position: outside;
 }
 
 
+footer .grid-box .parent-list .grid-items > li{
+    align-self: center;
+    list-style-type: none;
+    text-decoration: underline;    
+}
+
+footer .grid-box .parent-list > li{
+    list-style-type: none;
+    color: white;
+    line-height: 6vh;
+}
+
+footer .grid-box .parent-list > li:first-child ,footer .grid-box .parent-list >  li:last-child ,footer .grid-box .parent-list > li:nth-last-child(2){
+    padding-left: 6vh;
+}
 
