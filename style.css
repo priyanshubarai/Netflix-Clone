@@ -5,8 +5,8 @@
 
 
 *{
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -401,7 +401,5 @@ footer .grid-box .parent-list > li{
     line-height: 6vh;
 }
 
-footer .grid-box .parent-list > li:first-child ,footer .grid-box .parent-list >  li:last-child ,footer .grid-box .parent-list > li:nth-last-child(2){
-    padding-left: 6vh;
-}
+
 
