@@ -1,20 +1,23 @@
 /* background-color: #302c2c;  greyish*/
 /* div-color : #080404;  blackish*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Martel Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .world{
     background-color: #302c2c;
-    max-width : 100vw;   /*to avoid horizontal scroll bar */
+    max-width : 100vw;
+    height: auto;       /*to avoid horizontal scroll bar */
 }
 
 .continent-1{
@@ -22,23 +25,38 @@
     max-width : 100vw;
     height: 110vh;
     background-image: url('assests/top-background.jpg');
+    background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0px;
+    left: 0px;
     
+}
+
+.continent-1 > .blackbox {
+    max-width : 100vw;
+    height: 110vh;
+    background-color: #08040499;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 .header{
     margin: 0vh 5vw;
-    height : 6rem;
+    max-width: 100vw;
+    height : 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .navlist{
-    margin: 0 6vw;
     list-style-type: none;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    width: 80vw;
     
 }
 
@@ -50,7 +68,6 @@
     filter: invert(21%) sepia(86%) saturate(7474%) hue-rotate(357deg) brightness(95%) contrast(114%);   /*to get red out of black in logo*/
     height: 2.5rem;
     width: 9.25rem;
-    margin-right: 40rem;
 }
 
 #signin{
@@ -60,7 +77,7 @@
     background-color: red;
     font-weight: bold;
     border-radius: 0.5rem;
-    
+    border: 1px solid red;
 
 }
 
@@ -71,40 +88,64 @@
     opacity: 0.5;
     background-color: black;
     color: white;
-
+    border-radius: 5px;
 }
 
 .continent-1-body{
     max-width: 100vw;
-    height: 101.111vh;
+    height: 95vh;
     display: grid;
     justify-content: center;
+    align-items: center;
 }
 
-.quote-email{
+.continent-1-body > .text-box{
     color: white;
-    width: auto;
     position: relative;
-    top: 20vh;
+    top: 0px;
+    display: grid;
+    height: 100vh;
+    align-content: center;
+    justify-items: center;
+    /* line-height: 5vh; */
     
 }
 
-.quote-email > h1 {
+
+.continent-1-body .text-box > h1 {
+    font-family: "Martel Sans", sans-serif;
     font-weight: bolder;
+    font-style: normal;
+    font-size: 7.5vh;
+    text-align: center;
+  
 }
 
-.quote-email > h3 {
-    margin-left: 9vw;
+.continent-1-body .text-box:nth-child(2) {
+    font-size: 3.75vh;
+    text-align: center;
+
 }
+
+.continent-1-body .text-box:nth-child(3) {
+    font-size: 3vh;
+    text-align: center;
+
+}
+
+
+
 
 #email{
-    background-color: black;
-    opacity: 0.5;
+    /* background-color: black; */
+    /* opacity: 0.7; */
+    background-color: rgba(23, 23, 23, 0.7);
     height: 7vh;
     width: 25vw;
-    margin-left: 4vw;
     font-size: large;
-
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.158);
+    border-radius: 7px;
 }
 
 
@@ -113,15 +154,16 @@
     font-size: large;
     color: white;
     height: 8vh;
-    width: 9vw;
-    border-radius: 8%;
+    width: 12vw;
+    border-radius: 7px;
+    border: 1px solid red;
 
 }
 
 .continent {
     background-color:#080404;
     max-width: 100vw;
-    height: 86.81922480620155vh;
+    height: 60vh;
     margin-top: 1vh;
     padding:10vh 0vh ;
     display: grid;
@@ -129,237 +171,96 @@
 }
 
 
-.continent-2 > .country{
+.continent > .country{
     background-color:#080404;
     height: inherit;
     max-width: 100vw;
     display: flex;
-    flex-direction: row;
 }
 
-.continent-2 .country .text-container {
-    background-color: black;
+.continent .country > .text-box {
     color: white;
-    height: auto;
-    width: auto;
+    height: inherit;
+    width: 40vw;
     text-align: center;
-    margin-left: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0vh 5vh;
 }
 
-.continent-2 .country .text-container .text span{
-    font-size: xx-large;
+.continent .country .text-box .text :nth-child(1){
+    font-size: 6.5vh;
     font-weight: bolder;
-    width: 28vw;
 }
 
-.continent-2 .country .text-container .text{
-    font-size: large;
-    line-height: 5vh;
+.continent .country .text-box .text :nth-child(2){
+    font-size: 3vh;
 }
 
-.continent-2 .country .graphic-container{
-    position: relative;
-    left: 10%;
+.continent .country > .graphic-box {
+    color: white;
+    height: inherit;
+    width: 40vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0vh 5vh;
+
 }
 
-.continent-2 .country .graphic{
+.continent .country .graphic-box >.graphic{
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-areas: "main";
 }
-.continent-2 .country .graphic img ,.continent-2 .country .graphic video {
+
+.continent-2 .country .graphic > * { 
     grid-area: main;
 }
 
 .continent-2 .country .graphic video{
     z-index: 1;
     position: relative;
-    left: 12%;
-    top: -1%;
-
+    left: 13%;
+    top: -2%;
+    height: 33vh;
 }
 
 .continent-2 .country .graphic img{
     z-index: 2;
-}
-
-/* .continent-3{
-    margin-top: 1vh;
-    background-color:#080404;
-    height: 500px;
-    max-width: 100vw;
-    display: grid;
-    align-items: center;
-    padding: 10vh 0vh;
-} */
-
-.continent-3 .country {
-    height: inherit;
-    max-width: 100vw;
-    background-color: #080404;
-    display: grid;
-    grid-template-areas: "Garea Tarea";
-    align-items: center;    
-}
-
-.continent-3 .country > .graphic-box{
-    background-color:#080404;
-    height: inherit;
-    grid-area: Garea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 60vh;
 
 }
 
-.continent-3 .country > .text-box{
-    background-color :#080404;
-    height: inherit;
-    grid-area: Tarea;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.continent-3 .country .text-box > .text{
-    background-color :#080404;
-    height: auto;
-    width:auto;
-    color: white;
-    margin-left: 2vw;
-
-}
-
-.country .text-box .text > .head{
-    font-size: xx-large;
-    font-weight: bolder;
-    letter-spacing: 2px;
-}
-
-.continent-3 .country .text-box .text > pre{
-    font-size: large;
-    letter-spacing: 1px;
+.continent-3 .country .graphic img{
+    height: 65vh;
 }
 
 
-.continent-3 .country .graphic-box > .graphic{
-    background-color:#080404;
-    height: inherit;
-    width: auto;
-    
-}
-
-.continent-3 .country .graphic-box .graphic > img{
-    position: relative;
-    
-}
-
-/* .continent-4{
-    height: 500px;
-    max-width: 100vw;
-    background-color: #080404;
-    margin-top: 1vh;
-    padding: 10vh 0vh;
-} */
-
-.continent-4 > .country{
-    background-color:#080404;
-    max-width: 100vw;
-    height: inherit;
-    display: grid;
-    grid-template-columns:1fr 1fr ;
-}
-
-.continent-4 .country > .text-box{
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.continent-4 .country > .graphic-box{
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.continent-4 .country .graphic-box > .graphic{
-    margin-right: 4vw;    
-    display: grid;
-    grid-template-areas: "main";
-}
 
 .continent-4 .country .graphic-box .graphic > img{
     z-index: 2;
     grid-area: main;
+    height: 65vh;
 }
 
 .continent-4 .country .graphic-box .graphic > video{
     z-index: 1;
     grid-area: main;
-    margin-top: 6vh;
-    margin-left: 8vw;
-    height: 35vh;
+    margin-top: -22vh;
+    margin-left: 7vw;
+    height: 32vh;
 }
 
-
- .country .text-box > .text{
-    color: white;
-}
-
-.country .text-box .text > span{
-    font-size: xx-large;
-    font-weight: bolder;
-    letter-spacing: 2px;
-}
-
-.country .text-box .text > pre{
-    font-size: larger;
-    letter-spacing: 1px;
-    line-height: 5vh;
-    
-}
-
-/* .continent-5{
-    background-color: #080404;
-    height: 500px;
-    max-width: 100vw;
-    margin-top: 1vh;
-    padding: 10vh 0vh;
-} */
-
-.continent-5 > .country{
-    height: inherit;
-    max-width: 100vw;
-    display: grid;
-    grid-template-areas: "Garea3 Tarea3";
-}
-
-.continent-5 .country > .graphic-box{
-    grid-area: Garea3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .continent-5 .country  .graphic-box .graphic > img{
-    height: 60vh;
+    height: 55vh;
 
 }
 
-.continent-5 .country > .text-box{
-    grid-area: Tarea3;
-    width: 50vw;
-    margin-right: -20vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
 
 footer{
     background-color: #080404;

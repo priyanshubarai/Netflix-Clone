@@ -3,37 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix-Clone</title>
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="world">
         <div class="continent-1">
-            <div class="header">
-                <ul class="navlist">
-                    <li><img class="logo" src="assests/netflix_logo.svg" alt="logo"></li>
-                    <li class="dropdown">
-                        <select id="select" name="lang">
-                        <option value="eng">English</option>
-                        <option value="hindi">हिंदी</option>
-                        </select>
-                    </li>
-                    <li><button id="signin" type="button">Sign in</button></li>
-                </ul>
-            </div>
-            <div class="continent-1-body">
-                <div class="quote-email">
-                    <h1>Unlimited movies, TV shows and more</h1><br>
-                    <h3>Watch anywhere. Cancel anytime.</h3><br>
-                    <div>Ready to watch? Enter your email to create or restart your membership.</div><br>
-                    <span><input id="email" type="text" name="email" placeholder="    Email address"></span>
-                    <button id="getstarted">Get Started</button>
+            <div class="blackbox">
+                <div class="header">
+                    <ul class="navlist">
+                        <li><img class="logo" src="assests/netflix_logo.svg" alt="logo"></li>
+                        <li class="nav-buttons">
+                            <span class="dropdown">
+                                <select id="select" name="lang">
+                                <option value="eng">English</option>
+                                <option value="hindi">हिंदी</option>
+                                </select>
+                            </span>
+                            <span><button id="signin" type="button">Sign in</button></span>
+                        </li>
+                    </ul>
                 </div>
-            </div>  
+                <div class="continent-1-body">
+                    <!-- <div class="content"> -->
+                        <div class="text-box">
+                            <h1>Unlimited movies, TV shows and more</h1><br>
+                            <h3>Watch anywhere. Cancel anytime.</h3><br>
+                            <div>Ready to watch? Enter your email to create or restart your membership.</div><br>
+                            <div class="input">
+                                <span><input id="email" type="text" name="email" placeholder="    Email address"></span>
+                                <button id="getstarted">Get Started > </button>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>  
+            </div>
         </div>
         <div class="continent-2 continent">
             <div class="country">
-                <div class="text-container">
+                <div class="text-box">
                     <div class="text">
                         <span>Enjoy on your TV</span>
                         <pre>Watch on smart TVs, PlayStation, Xbox,
@@ -41,7 +49,7 @@
     and more.</pre>
                     </div>
                 </div>
-                <div class="graphic-container">
+                <div class="graphic-box">
                     <div class="graphic">
                         <img src="assests/tv1.png" alt="">
                         <video src="assests/video-tv-in-0819.m4v" autoplay muted loop></video>
@@ -52,18 +60,17 @@
         </div>
         <div class="continent-3 continent">
             <div class="country">
-                <div class="text-box">
-                    <div class="text">
-                        <pre class="head">Download your
-shows to watch
-offline.</pre>
-                    <pre>Save your favourites easily and always have 
-something to watch.</pre>
-                    </div>
-                </div>
                 <div class="graphic-box">
                     <div class="graphic">
                         <img src="assests/mobile2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div class="text">
+                        <pre class="head">Download your
+shows to watch offline.</pre>
+                    <pre>Save your favourites easily and always have 
+something to watch.</pre>
                     </div>
                 </div>
             </div>
